@@ -70,3 +70,29 @@ figcaption {
     margin-top: 0.5rem;
     font-weight: bold;
 }
+
+#menu {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+}
+
+.navigation.open {
+    display: flex;
+}
