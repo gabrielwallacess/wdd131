@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Local - Projeto WDD 131">
+    <meta name="author" content="Gabriel Wallace">
+
+    <title>Belém, Pará - WDD 131 Local Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="semana03/estilos/local.css">
+    <link rel="stylesheet" href="semana03/estilos/local-grande.css">
+
+    <script src="semana03/scripts/local.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <h1>Belém, Pará</h1>
+</header>
+
+<main>
+
+    <picture>
+        <source
+            media="(min-width: 1000px)"
+            srcset="semana03/imagens/principal-grande.webp">
+
+        <source
+            media="(min-width: 600px)"
+            srcset="semana03/imagens/principal-media.webp">
+
+        <img
+            src="semana03/imagens/principal-pequena.webp"
+            alt="Templo de Belém"
+            width="1200"
+            height="800">
+    </picture>
+
+    <section class="card">
+        <h2>Dados</h2>
+
+        <p><strong>Área:</strong> 1.059 km²</p>
+        <p><strong>População:</strong> 1.300.000</p>
+        <p><strong>País:</strong> Brasil</p>
+        <p><strong>Idioma:</strong> Português</p>
+        <p><strong>Moeda:</strong> Real (R$)</p>
+    </section>
+
+    <section class="card weather">
+        <h2>Clima</h2>
+
+        <img
+            src="semana03/imagens/weather.svg"
+            alt="Ícone de clima parcialmente nublado"
+            class="weather-icon">
+
+        <p><strong>Temperatura:</strong> 24°C</p>
+        <p><strong>Condição:</strong> Parcialmente nublado</p>
+        <p><strong>Vento:</strong> 8 km/h</p>
+        <p><strong>Sensação:</strong> <span id="windChill"></span></p>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; <span id="currentyear"></span> Gabriel Wallace | Brasil</p>
+    <p id="lastModified"></p>
+</footer>
+
+</body>
+
+</html>
