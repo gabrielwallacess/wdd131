@@ -1,14 +1,63 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width:768px){
 
-    .weather h2::after {
-        content: " ☀️";
-        margin-left: 15px;
-        font-size: 2rem;
-    }
 
-    .weather-icon {
-        display: none;
-    }
+.layout {
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:2rem;
+
+max-width:1000px;
+
+margin:auto;
 
 }
 
+
+
+.hero {
+
+grid-column:1/-1;
+
+}
+
+
+
+.dados {
+
+grid-column:1;
+
+}
+
+
+
+.clima {
+
+grid-column:2;
+
+}
+
+
+
+.weather-icon {
+
+display:none;
+
+}
+
+
+
+.clima h2::after {
+
+content:" ☀️";
+
+font-size:1.8rem;
+
+margin-left:10px;
+
+}
+
+
+}
