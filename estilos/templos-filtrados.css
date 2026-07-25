@@ -4,13 +4,9 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Roboto", Arial, sans-serif;
-}
-
 header {
     background-color: #2b3a67;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
 }
@@ -24,7 +20,7 @@ nav ul {
 nav a {
     display: block;
     padding: .75rem;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -44,7 +40,7 @@ main h2 {
 
 footer {
     background-color: #2b3a67;
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 1rem;
 }
@@ -69,7 +65,7 @@ figcaption {
     display: block;
     background: none;
     border: none;
-    color: white;
+    color: #ffffff;
     font-size: 2rem;
     cursor: pointer;
 }
@@ -117,5 +113,5 @@ body {
 
 .gallery figure:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0,0,0,.25);
+    box-shadow: 0 6px 14px #00000033;
 }
