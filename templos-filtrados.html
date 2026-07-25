@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria de imagens de templos de A Igreja de Jesus Cristo dos Santos dos Últimos Dias, desenvolvida para a atividade WDD 131.">
+    <meta name="author" content="Gabriel Wallace">
+    <title>Álbum do Templo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Mobile First -->
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-grandes-filtrados.css">
+    
+    <!-- JavaScript -->
+    <script defer src="scripts/templos-filtrados.js"></script>
+</head>
+
+<body>
+
+    <header>
+    <h1>Álbum do Templo</h1>
+
+    <button id="menu" aria-label="Abrir menu"></button>
+
+    <nav aria-label="Navegação principal">
+        <ul class="navigation">
+            <li><a href="#" id="home">Home</a></li>
+            <li><a href="#" id="old">Old</a></li>
+            <li><a href="#" id="new">New</a></li>
+            <li><a href="#" id="large">Large</a></li>
+            <li><a href="#" id="small">Small</a></li>  
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Página Inicial</h2>
+    <div class="gallery"></div>
+</main>
+ <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 Gabriel Wallace 🌴 Brasil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
