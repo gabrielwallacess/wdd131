@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avaliação de Produto</title>
+
+<meta name="description" content="Formulário de avaliação de produtos">
+<meta name="author" content="Gabriel Wallace">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="estilo/formulario.css">
+
+<script src="scripts/formulario.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Avaliação de Produto</h1>
+</header>
+
+<main>
+
+<form method="get" action="avaliacao.html">
+
+<div class="campo">
+
+<label for="produto">Nome do Produto *</label>
+
+<select id="produto" name="produto" required>
+
+<option value="" disabled selected>Selecione um Produto...</option>
+
+</select>
+
+</div>
+
+<div class="campo">
+
+<p>Classificação Geral *</p>
+
+<div class="estrelas">
+
+<label><input type="radio" name="avaliacao" id="nota1" value="1" required> ☆</label>
+
+<label><input type="radio" name="avaliacao" id="nota2" value="2"> ☆☆</label>
+
+<label><input type="radio" name="avaliacao" id="nota3" value="3"> ☆☆☆</label>
+
+<label><input type="radio" name="avaliacao" id="nota4" value="4"> ☆☆☆☆</label>
+
+<label><input type="radio" name="avaliacao" id="nota5" value="5"> ☆☆☆☆☆</label>
+
+</div>
+
+</div>
+
+<div class="campo">
+
+<label for="data">Data de Instalação *</label>
+
+<input
+type="date"
+id="data"
+name="data"
+required>
+
+</div>
+
+<div class="campo">
+
+<p>Recursos Úteis</p>
+
+<label>
+<input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
+Durabilidade
+</label>
+
+<label>
+<input type="checkbox" id="facilidade" name="recursos" value="Facilidade de uso">
+Facilidade de uso
+</label>
+
+<label>
+<input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
+Desempenho
+</label>
+
+<label>
+<input type="checkbox" id="design" name="recursos" value="Design">
+Design
+</label>
+
+</div>
+
+<div class="campo">
+
+<label for="comentario">Avaliação Escrita</label>
+
+<textarea
+id="comentario"
+name="comentario"
+rows="5">
+</textarea>
+
+</div>
+
+<div class="campo">
+
+<label for="usuario">Nome de Usuário</label>
+
+<input
+type="text"
+id="usuario"
+name="usuario">
+
+</div>
+
+<input type="submit" value="Enviar Avaliação">
+
+</form>
+
+</main>
+
+<footer>
+
+<p>
+©
+<span id="ano"></span>
+Gabriel Wallace
+</p>
+
+<p id="ultimaModificacao"></p>
+
+</footer>
+
+</body>
+</html>
