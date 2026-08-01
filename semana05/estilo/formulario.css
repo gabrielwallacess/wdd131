@@ -77,3 +77,26 @@ padding:20px;
 background:#222;
 color:white;
 }
+
+@media (min-width: 768px) {
+
+    main {
+        max-width: 800px;
+    }
+
+    form {
+        padding: 40px;
+    }
+
+    .estrelas {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    input[type="submit"] {
+        width: auto;
+        padding: 12px 30px;
+    }
+
+}
