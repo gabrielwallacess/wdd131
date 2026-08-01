@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Avaliação de Produto</title>
 
-<meta name="description" content="Formulário de avaliação de produtos">
+<meta name="description" content="Envie sua avaliação de um produto preenchendo o formulário com nota, comentários e informações sobre a instalação.">
 <meta name="author" content="Gabriel Wallace">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
 
 <select id="produto" name="produto" required>
 
-<option value="" disabled selected>Selecione um Produto...</option>
+<option value="" selected disabled>Selecione um produto ...</option>
 
 </select>
 
@@ -47,15 +47,20 @@
 
 <div class="estrelas">
 
-<label><input type="radio" name="avaliacao" id="nota1" value="1" required> ☆</label>
+<input type="radio" id="nota1" name="avaliacao" value="1" required>
+<label for="nota1">☆</label>
 
-<label><input type="radio" name="avaliacao" id="nota2" value="2"> ☆☆</label>
+<input type="radio" id="nota2" name="avaliacao" value="2" required>
+<label for="nota2">☆☆</label>
 
-<label><input type="radio" name="avaliacao" id="nota3" value="3"> ☆☆☆</label>
+<input type="radio" id="nota3" name="avaliacao" value="3" required>
+<label for="nota3">☆☆☆</label>
 
-<label><input type="radio" name="avaliacao" id="nota4" value="4"> ☆☆☆☆</label>
+<input type="radio" id="nota4" name="avaliacao" value="4" required>
+<label for="nota4">☆☆☆☆</label>
 
-<label><input type="radio" name="avaliacao" id="nota5" value="5"> ☆☆☆☆☆</label>
+<input type="radio" id="nota5" name="avaliacao" value="5" required>
+<label for="nota5">☆☆☆☆☆</label>
 
 </div>
 
@@ -77,25 +82,17 @@ required>
 
 <p>Recursos Úteis</p>
 
-<label>
 <input type="checkbox" id="durabilidade" name="recursos" value="Durabilidade">
-Durabilidade
-</label>
+<label for="durabilidade">Durabilidade</label>
 
-<label>
 <input type="checkbox" id="facilidade" name="recursos" value="Facilidade de uso">
-Facilidade de uso
-</label>
+<label for="facilidade">Facilidade de uso</label>
 
-<label>
 <input type="checkbox" id="desempenho" name="recursos" value="Desempenho">
-Desempenho
-</label>
+<label for="desempenho">Desempenho</label>
 
-<label>
 <input type="checkbox" id="design" name="recursos" value="Design">
-Design
-</label>
+<label for="design">Design</label>
 
 </div>
 
