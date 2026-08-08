@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Conheça os serviços oferecidos pelo Studio Thamires Hair.">
+    <meta name="author" content="Gabriel Wallace">
+
+    <title>Serviços | Studio Thamires Hair</title>
+
+    <link rel="icon" href="imagens/logo.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/large.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="imagens/logo.webp"
+             alt="Logo Studio Thamires Hair"
+             width="80"
+             height="80">
+
+        <h1>Studio Thamires Hair</h1>
+    </div>
+
+    <button id="menuBtn" aria-label="Abrir Menu">☰</button>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="servicos.html" class="active">Serviços</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+
+    <h2>Nossos Serviços</h2>
+
+    <p style="text-align:center; margin-bottom:2rem;">
+        Trabalhamos com produtos profissionais e atendimento personalizado
+        para oferecer o melhor resultado para seus cabelos.
+    </p>
+
+    <div id="listaServicos" class="cards">
+        <!-- Os cards serão inseridos pelo JavaScript -->
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Por que escolher nosso salão?</h2>
+
+    <div class="cards">
+
+        <article class="card">
+            <h3>Produtos Profissionais</h3>
+            <p>
+                Trabalhamos com marcas reconhecidas para garantir
+                qualidade e proteção aos cabelos.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Atendimento Personalizado</h3>
+            <p>
+                Cada cliente recebe um atendimento exclusivo,
+                respeitando seu estilo e necessidade.
+            </p>
+        </article>
+
+        <article class="card">
+            <h3>Ambiente Acolhedor</h3>
+            <p>
+                Um espaço preparado para proporcionar conforto
+                e uma excelente experiência.
+            </p>
+        </article>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Galeria</h2>
+
+    <div class="cards">
+
+        <article class="card">
+            <img src="imagens/corte.webp"
+                 alt="Corte feminino"
+                 loading="lazy">
+            <h3>Corte Feminino</h3>
+        </article>
+
+        <article class="card">
+            <img src="imagens/escova.webp"
+                 alt="Escova"
+                 loading="lazy">
+            <h3>Escova</h3>
+        </article>
+
+
+        <article class="card">
+            <img src="imagens/coloracao.webp"
+                 alt="Coloração"
+                 loading="lazy">
+            <h3>Coloração</h3>
+        </article>
+
+        <article class="card">
+            <img src="imagens/hidratacao.webp"
+                 alt="Hidratação"
+                 loading="lazy">
+            <h3>Hidratação</h3>
+        </article>
+
+        <article class="card">
+            <img src="imagens/progressiva.webp"
+                 alt="Progressiva"
+                 loading="lazy">
+            <h3>Progressiva</h3>
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        © <span id="currentyear"></span> Studio Thamires Hair
+    </p>
+
+    <p>
+        Última atualização:
+        <span id="lastModified"></span>
+    </p>
+
+    <p>
+        <a href="referencias.html">Referências</a>
+    </p>
+
+</footer>
+
+<script src="script/script.js"></script>
+
+</body>
+
+</html>

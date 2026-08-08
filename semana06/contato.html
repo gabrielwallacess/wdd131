@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Entre em contato com o Studio Thamires Hair e solicite seu agendamento.">
+
+    <meta name="author" content="Gabriel Wallace">
+
+    <title>Contato | Studio Thamires Hair</title>
+
+    <link rel="icon" href="imagens/logo.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/large.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+
+        <img src="imagens/logo.webp"
+             alt="Logo Studio Thamires Hair"
+             width="80"
+             height="80">
+
+        <h1>Studio Thamires Hair</h1>
+
+    </div>
+
+    <button id="menuBtn" aria-label="Abrir menu">
+        ☰
+    </button>
+
+    <nav id="menu">
+
+        <ul>
+
+            <li><a href="index.html">Início</a></li>
+
+            <li><a href="servicos.html">Serviços</a></li>
+
+            <li><a href="contato.html" class="active">Contato</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<section>
+
+    <h2>Solicite seu Agendamento</h2>
+
+    <p style="text-align:center; margin-bottom:2rem;">
+        Preencha o formulário abaixo. Entraremos em contato para confirmar seu horário.
+    </p>
+
+    <form id="contatoForm">
+
+        <label for="nome">
+            Nome Completo
+        </label>
+
+        <input
+            type="text"
+            id="nome"
+            name="nome"
+            required>
+
+        <label for="telefone">
+            Telefone
+        </label>
+
+        <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(11) 99999-9999"
+            required>
+
+        <label for="email">
+            E-mail
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+
+        <label for="servico">
+            Serviço Desejado
+        </label>
+
+        <select
+            id="servico"
+            name="servico"
+            required>
+
+            <option value="">
+                Selecione um serviço...
+            </option>
+
+            <option>Corte Feminino</option>
+
+            <option>Escova</option>
+
+            <option>Coloração</option>
+
+            <option>Hidratação</option>
+
+            <option>Progressiva</option>
+
+        </select>
+
+        <label for="horario">
+            Melhor horário
+        </label>
+
+        <input
+            type="time"
+            id="horario"
+            name="horario"
+            required>
+
+        <label for="mensagemCliente">
+            Mensagem
+        </label>
+
+        <textarea
+            id="mensagemCliente"
+            name="mensagemCliente"
+            placeholder="Digite sua mensagem..."></textarea>
+
+        <button type="submit">
+            Solicitar Agendamento
+        </button>
+
+    </form>
+
+</section>
+
+<section>
+
+    <div id="mensagem"></div>
+
+</section>
+
+<section>
+
+    <h2>Informações</h2>
+
+    <div class="cards">
+
+        <article class="card">
+
+            <h3>📍 Endereço</h3>
+
+            <p>
+                Av. Sinésio Pereira, 180<br>
+                Diadema - SP
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <h3>📞 Telefone</h3>
+
+            <p>
+                (11) 99999-9999
+            </p>
+
+        </article>
+
+        <article class="card">
+
+            <h3>📧 E-mail</h3>
+
+            <p>
+                contato@studiothamireshair.com.br
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+
+    <p>
+        © <span id="currentyear"></span>
+        Studio Thamires Hair
+    </p>
+
+    <p>
+        Última atualização:
+        <span id="lastModified"></span>
+    </p>
+
+    <p>
+        <a href="referencias.html">
+            Referências
+        </a>
+    </p>
+
+</footer>
+
+<script src="script/script.js"></script>
+
+</body>
+
+</html>

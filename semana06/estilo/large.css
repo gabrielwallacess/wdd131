@@ -1,0 +1,157 @@
+/* ==========================================
+   LARGE.CSS
+   Estilos para telas maiores (Desktop)
+========================================== */
+
+@media only screen and (min-width: 768px) {
+
+    /* ==========================
+       HEADER
+    ========================== */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 3rem;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #menuBtn {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav a {
+        padding: .8rem 1.2rem;
+        border-radius: 5px;
+    }
+
+    /* ==========================
+       HERO
+    ========================== */
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        height: 550px;
+        object-fit: cover;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+        max-width: 500px;
+
+        background: rgba(255,255,255,.85);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    .hero-text h2 {
+        font-size: 2.4rem;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+
+    /* ==========================
+       SEÇÕES
+    ========================== */
+
+    section {
+        padding: 4rem 8%;
+    }
+
+    /* ==========================
+       SOBRE
+    ========================== */
+
+    .sobre-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .sobre-grid img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    /* ==========================
+       HORÁRIOS
+    ========================== */
+
+    table {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* ==========================
+       CARDS
+    ========================== */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .card {
+        transition: transform .3s;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+    }
+
+    /* ==========================
+       MAPA
+    ========================== */
+
+    iframe {
+        height: 450px;
+    }
+
+    /* ==========================
+       FORMULÁRIO
+    ========================== */
+
+    form {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    /* ==========================
+       FOOTER
+    ========================== */
+
+    footer {
+        padding: 2rem;
+    }
+
+}
